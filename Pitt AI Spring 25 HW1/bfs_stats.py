@@ -52,6 +52,7 @@ output=  breadth_first_search(problem)
 print('Solution Example 1:')
 print_path(output)
 print("Nodes Expanded: "+str(expanded_count) + "\nNodes Generated: "+ str(generated_count) + "\nMax Queue Length: " + str(max_len) + "\nSolution Length: " + str(solution_len))
+
 expanded_count = 0
 generated_count = 0
 max_len = 0
@@ -62,8 +63,9 @@ wait = input("PRESS ENTER TO CONTINUE.")
 problem=Puzzle8_Problem(Example2) 
 output=  breadth_first_search(problem)
 print('Solution Example 2:')
-print_path(output)
 print("Nodes Expanded: "+str(expanded_count) + "\nNodes Generated: "+ str(generated_count) + "\nMax Queue Length: " + str(max_len) + "\nSolution Length: " + str(solution_len))
+print_path(output)
+
 expanded_count = 0
 generated_count = 0
 max_len = 0
@@ -74,8 +76,9 @@ wait = input("PRESS ENTER TO CONTINUE.")
 problem=Puzzle8_Problem(Example3) 
 output=  breadth_first_search(problem)
 print('Solution Example 3:')
-print_path(output)
 print("Nodes Expanded: "+str(expanded_count) + "\nNodes Generated: "+ str(generated_count) + "\nMax Queue Length: " + str(max_len) + "\nSolution Length: " + str(solution_len))
+print_path(output)
+
 expanded_count = 0
 generated_count = 0
 max_len = 0
@@ -86,8 +89,9 @@ wait = input("PRESS ENTER TO CONTINUE.")
 problem=Puzzle8_Problem(Example4) 
 output=  breadth_first_search(problem)
 print('Solution Example 4:')
-print_path(output)
 print("Nodes Expanded: "+str(expanded_count) + "\nNodes Generated: "+ str(generated_count) + "\nMax Queue Length: " + str(max_len) + "\nSolution Length: " + str(solution_len))
+print_path(output)
+
 expanded_count = 0
 generated_count = 0
 max_len = 0
@@ -95,6 +99,7 @@ solution_len = 0
 
 # Solution to Example 5 may take too long to calculate using vanilla bfs
 # problem=Puzzle8_Problem(Example5) 
+# print("Nodes Expanded: "+str(expanded_count) + "\nNodes Generated: "+ str(generated_count) + "\nMax Queue Length: " + str(max_len) + "\nSolution Length: " + str(solution_len))
 # output=  breadth_first_search(problem)
 # print('Solution Example 5:')
 # print_path(output)
