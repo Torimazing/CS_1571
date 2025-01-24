@@ -24,6 +24,15 @@ generated_count = 0
 max_len = 0
 solution_len = 0
 
+def check_cyclic_repeats(node):
+    current_state = node.state
+    parent = node.parent
+    while parent:
+        if parent.state == current_state:
+            return False
+        parent = parent.parent
+    return True
+
 def breadth_first_search(problem):
      global expanded_count, generated_count, max_len, solution_len
      queue =deque([])
@@ -41,8 +50,9 @@ def breadth_first_search(problem):
          else:
              new_nodes=next.generate_new_tree_nodes()
              for new_node in new_nodes:
-                  generated_count += 1
-                  queue.append(new_node)         
+                  if check_cyclic_repeats(new_node):
+                      generated_count += 1
+                      queue.append(new_node)
      print('No solution')
      return NULL
 
