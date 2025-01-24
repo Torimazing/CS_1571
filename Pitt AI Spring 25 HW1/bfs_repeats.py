@@ -49,8 +49,8 @@ def breadth_first_search(problem):
          else:
              new_nodes=next.generate_new_tree_nodes()
              for new_node in new_nodes:
+                  generated_count += 1
                   if breath_search_repeats(new_node):
-                      generated_count += 1
                       queue.append(new_node)
      print('No solution')
      return NULL

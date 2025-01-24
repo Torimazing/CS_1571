@@ -99,8 +99,8 @@ solution_len = 0
 
 # Solution to Example 5 may take too long to calculate using vanilla bfs
 # problem=Puzzle8_Problem(Example5) 
-# print("Nodes Expanded: "+str(expanded_count) + "\nNodes Generated: "+ str(generated_count) + "\nMax Queue Length: " + str(max_len) + "\nSolution Length: " + str(solution_len))
 # output=  breadth_first_search(problem)
+# print("Nodes Expanded: "+str(expanded_count) + "\nNodes Generated: "+ str(generated_count) + "\nMax Queue Length: " + str(max_len) + "\nSolution Length: " + str(solution_len))
 # print('Solution Example 5:')
 # print_path(output)
  
