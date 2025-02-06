@@ -11,6 +11,6 @@ Created on Thu Sep 12 18:32:46 2019
 def h_function(state,target_state):
     h = 0
     for tile in range(len(state)):
-        if state[tile] == target_state[tile]:
+        if state[tile] != target_state[tile]:
             h+=1
     return h  
