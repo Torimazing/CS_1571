@@ -13,7 +13,7 @@ This module includes:
 """
 from collections import deque
 from random import *
-from heuristic1 import h_function
+from heuristic2 import h_function
 
 
 NO_MOVE =-1
